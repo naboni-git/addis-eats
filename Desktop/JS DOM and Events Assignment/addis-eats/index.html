@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Addis Market List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main class="container" id="app-container">
+      <header>
+        <div class="header-icon" aria-hidden="true">🛒</div>
+        <h1>Addis Market List</h1>
+        <p class="subtitle">A state-then-render grocery shopping list</p>
+      </header>
+
+      <!-- Form to add grocery items -->
+      <form id="add-form">
+        <input id="name" placeholder="e.g. Teff" autocomplete="off" />
+        <button type="submit" id="add-btn">Add</button>
+      </form>
+
+      <!-- Paragraph for the live item counter -->
+      <p id="count">0 items</p>
+
+      <!-- Empty list to be populated by JavaScript -->
+      <ul id="list"></ul>
+
+      <p class="helper-text">
+        💡 Click an item to mark as bought • Click Remove to delete
+      </p>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

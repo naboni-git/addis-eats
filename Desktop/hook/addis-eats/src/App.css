@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #fef9f0;
+}
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem 0;
+  border-bottom: 3px solid #e8c9a0;
+  margin-bottom: 2rem;
+}
+.header h1 {
+  font-size: 2.8rem;
+  color: #8b3a0b;
+}
+.header p {
+  font-size: 1.2rem;
+  color: #6b4c2a;
+  font-style: italic;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+.filter-bar button {
+  background: white;
+  border: 2px solid #e8c9a0;
+  padding: 0.4rem 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.filter-bar button.active {
+  background: #8b3a0b;
+  color: white;
+  border-color: #8b3a0b;
+}
+.filter-bar button:hover:not(.active) {
+  background: #f0e4d5;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.dish-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0e4d5;
+  transition: transform 0.2s;
+}
+.dish-card:hover {
+  transform: translateY(-4px);
+}
+.dish-card h3 {
+  color: #3d2b1f;
+  margin: 0.5rem 0;
+}
+.dish-card .price {
+  color: #8b3a0b;
+  font-weight: 600;
+  background: #fef0e0;
+  display: inline-block;
+  padding: 0.1rem 1rem;
+  border-radius: 20px;
+  margin: 0.5rem 0;
+}
+.dish-card .dish-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.dish-card .categoryWrapper {
+  font-size: 0.85rem;
+  color: #6b4c2a;
+  margin: 0.3rem 0;
+}
+
+.dish-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin: 0.8rem 0;
+}
+.dish-controls button {
+  background: #f0e4d5;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+.dish-controls button:hover {
+  background: #e8c9a0;
+}
+.dish-controls .count {
+  font-weight: bold;
+  font-size: 1.1rem;
+  min-width: 20px;
+}
+
+.reset-btn {
+  background: #d32f2f;
+  color: white;
+  border: none;
+  padding: 0.3rem 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: #6b4c2a;
+  font-size: 1.2rem;
+}
